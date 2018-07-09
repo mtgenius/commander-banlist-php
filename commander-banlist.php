@@ -29,8 +29,8 @@ $banlists = array(
 				$html, $cards
 			);
 
-			// Add cards not in MTGO.
-			$cards[1] = array_merge($cards[1], array('Chaos Orb', 'Falling Star', 'Shahrazad'));
+			// Add cards not in MTGO or missing from the banlist.
+			$cards[1] = array_merge($cards[1], array('Chaos Orb', 'Falling Star', 'Mox Emerald', 'Mox Jet', 'Mox Pearl', 'Mox Ruby', 'Mox Sapphire', 'Shahrazad'));
 			return $cards[1];
 		}
 	),
