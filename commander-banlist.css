@@ -1,0 +1,110 @@
+.banlist {
+	border-width: 1px 1px 0 0;
+	box-sizing: border-box;
+	margin: 0.5em;
+	width: auto;
+}
+
+.banlist,
+.banlist td,
+.banlist th {
+	border-color: #000000;
+	border-style: solid;
+}
+
+.banlist a {
+	color: @a400;
+}
+
+.banlist > tbody th {
+	color: @a700;
+}
+
+.banlist > tbody > tr > th:after {
+	content: "";
+}
+
+.banlist td {
+	text-align: center;
+}
+
+	.banlist td.x,
+	.banlist td.y {
+		cursor: default;
+	}
+
+.banlist td,
+.banlist th {
+	border-width: 0 0 1px 1px;
+	padding: 0.5em;
+}
+
+.banlist th {
+	vertical-align: middle;
+}
+
+.banlist thead th {
+	background-color: @a100;
+}
+
+.banlist tr {
+	background-color: rgba(255, 255, 255, 0.667);
+}
+
+#legend {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+	#legend > span {
+		margin: 0 1em;
+	}
+
+	#legend .y {
+		font-weight: bold;
+	}
+
+main h2 {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 1.5em;
+	margin: 0;
+	padding-top: 1.5em;
+}
+
+main .x {
+	color: @a700;
+	font-weight: bold;
+}
+
+main .y {
+	color: #2c8566;
+}
+
+.tables {
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media (orientation: landscape) {
+	.banlist {
+		width: calc(25% - 1em);
+	}
+}
+
+@media (orientation: portrait) {
+	.banlist {
+		width: calc(100% - 1em);
+	}
+}
+
+/*.banlist td.x {
+	background-color: @p200;
+}
+
+.banlist tr.x td,
+.banlist tr.x th {
+	background-color: @a100;
+}*/
